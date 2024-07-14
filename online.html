@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Training Program</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+	.body
+	{
+		background: white;
+		height: 100%;
+		width: 100%;
+	}
+	.container 
+	{
+  	  position: relative;
+  	  text-align: center;
+  	  color: white;
+	}
+	.centerleft
+	{
+		position: absolute;
+		top: 200px;
+		left: 230px;
+		text-align: center;
+		color: #000000;
+		font-family: sans-serif;
+		font-size: 30px;
+	}
+	.center
+	{
+		position: absolute;
+		top: 250px;
+		left: 230px;
+		text-align: center;
+		color: #000000;
+		font-size: 50px;
+	    font-family: "Libre Baskerville", serif;
+    	font-weight: 200;
+    	font-style: normal;
+	}
+	.bottom
+	{
+		position: absolute;
+		top: 330px;
+		left: 230px;
+		text-align: center;
+		color: #000000;
+		font-size: 50px;
+		font-family: "Libre Baskerville", serif;
+		font-weight: 200;
+		font-style: normal;
+	}
+	.main{
+		position: relative;
+		text-align: center;
+
+	}
+	.subdiv
+	{
+		top: 20px;
+		
+	}
+	.subbdiv
+	{
+		position: absolute;
+		text-align: center;
+		top: 20px;
+		left: 500px;
+		font-family: sans-serif;
+		font-size: 40px;
+	}
+	.first{
+		position: absolute;
+		text-align: center;
+		top: 150px;
+		left: 320px;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.firstdiv
+	{
+		position: absolute;
+		text-align: left;
+		top: 300px;
+		left: 330px;
+		font-size: 20px;
+		font-family: serif;
+	}
+	.second
+	{
+		position: absolute;
+		text-align: left;
+		top: 150px;
+		left: 1010px;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.seconddiv
+	{
+		position: absolute;
+		text-align: left;
+		top: 300px;
+		left: 1020px;
+		font-size: 20px;
+		font-family: serif;
+	}
+	.third
+	{
+		position: absolute;
+		text-align: left;
+		top: 550px;
+		left: 320px;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.thirddiv
+	{
+		position: absolute;
+		text-align: left;
+		top: 700px;
+		left: 340px;
+		font-size: 20px;
+		font-family: serif;
+	}
+	.fourth
+	{
+		position: absolute;
+		text-align: left;
+		top: 550px;
+		left: 1020px;
+		font-size: 30px;
+		font-family: sans-serif;
+	}
+	.fourthdiv
+	{
+		position: absolute;
+		text-align:left;
+		top: 700px;
+		left: 1030px;
+		font-size: 20px;
+		font-family: serif;
+	}
+	.fifth
+	{
+		position: absolute;
+		text-align: left;
+		top: 950px;
+		left: 300px;
+		font-size: 30px;
+		font-family: sans-serif;	
+	}
+	.fifthdiv
+	{
+		position: absolute;
+		text-align: left;
+		top: 1070px;
+		left: 340px;
+		font-size: 20px;
+		font-family: serif;
+	}
+	.sixth
+	{
+	    position: absolute;
+		text-align: left;
+		top: 950px;
+		left: 1020px;
+		font-size: 30px;
+		font-family: sans-serif;
+ 	} 
+ 	.sixthdiv
+ 	{
+ 	    position: absolute;
+		text-align: left;
+		top: 1070px;
+		left: 1030px;
+		font-size: 20px;
+		font-family: serif; 	
+ 	}
+ 	.MAIN
+ 	{
+ 		position: relative;
+ 		text-align: center; 
+ 	}
+ 	.chaithu
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		top: 100px;
+ 		left: 100px;
+ 		font-family: "Ubuntu", sans-serif;
+  		font-weight: 700;
+  		font-style: normal;
+  		font-size: 50px;
+  		color: #ffffff;
+
+ 	}
+ 	.sub
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		top: 170px;
+ 		left: 100px;
+ 		font-family: sans-serif;
+ 		font-size: 20px;
+ 	}
+ 	.sub1
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		top: 250px;
+ 		left: 100px;
+ 		font-family: cursive;
+ 		font-size: 20px;
+ 	}
+ 	.bhav
+ 	{
+ 		position: relative;
+ 		text-align: center;
+ 	}
+ 	.bhav1
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		font-family:fantasy ;
+ 		top: 80px;
+ 		left: 100px;
+ 	}
+ 	.bhavv
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		font-family: sans-serif;
+ 		top: 130px;
+ 		left: 100px;
+ 	}
+ 	.bhav2
+ 	{
+ 		position: absolute;
+ 		text-align: center;
+ 		font-family: "Foldit", sans-serif;
+ 		font-optical-sizing: auto;
+ 		font-weight: <weight>;
+  		font-style: normal;
+  		top: 170px;
+  		left: 100px;
+  		font-size: 70px;
+   	}
+   	.bhav3
+   	{
+   		position: absolute;
+   		text-align: center;
+   		font-family: sans-serif;
+   		font-size: 20px;
+   		left: 100px;
+   		top: 300px;
+   	}
+   	.pavi
+   	{
+   		position: relative;
+   		text-align: center;
+   	}
+   	.us
+   	{
+   		position: relative;
+   		text-align: center;
+   	}
+   	.bsp
+   	{
+   		position: relative;
+   		text-align: center;
+   	}
+   	.bsp1
+   	{
+   		position: absolute;
+   		text-align: center;
+   		left: 500px;
+   		top: 50px;
+   		font-family: "Nabla", system-ui;
+  		font-optical-sizing: auto;
+  		font-weight: 400;
+  		font-style: normal;
+  		font-variation-settings:
+    	"EDPT" 100,
+    	"EHLT" 12;
+   		color: yellow;
+   		font-size: 60px;
+   	}
+   	.i
+   	{
+   		position: relative;
+   		text-align: center;
+   	}
+   	.u
+   	{
+   		position: absolute;
+   		left: 60px;
+   		top: 170px;
+   		font-size: 40px;
+   	}
+   	.u1
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 230px;
+   		color: black;
+   		font-family: cursive;
+   		font-size: 20px;
+   	}
+   	.u11
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 270px;
+   		color: black;
+   		font-size: 20px;
+   		font-family: cursive;
+   	}
+   	.u2
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 400px;
+   		font-size:40px;
+   	}
+   	.me
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 450px;
+   		font-family: cursive;
+   		color: black;
+   		font-size: 20px;
+   	}
+   	.div
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 530px;
+   		font-size: 40px;
+   	}
+   	.div1
+   	{
+   		position: absolute;
+   		text-align: left;
+   		left: 60px;
+   		top: 580px;
+   		font-family: cursive;
+   		color: black;
+   		font-size: 20px;
+   	}
+   	.div2
+   	{
+   		position: absolute;
+   		text-align: center;
+   		left: 600px;
+   		top: 300px;
+   	}
+   	input[type="text"]{
+   		width:500px;
+   		height: 40px;
+   	}
+   	.div3
+   	{
+   		position: absolute;
+   		text-align: center;
+   		left: 600px;
+   		top:430px;
+
+   	}
+   	input[type="email"]{
+   		width: 500px;
+   		height: 40px;
+   	}
+   	.div4
+   	{
+   		position: absolute;
+   		text-align: center;
+   		left: 600px;
+   		top: 550px;
+   	}
+   	input[type="message"]{
+   		width: 500px;
+   		height: 100px;
+   	}
+   	.div5
+   	{
+   		position: absolute;
+   		text-align: center;
+   		top: 700px;
+   		left: 600px;
+   	}
+
+</style>
+<body>
+<div class="body">
+	<!---Main div--->
+	<div class="container">
+		<!---First div--->
+		<img src="training/phone5.jpg">
+		<div class="centerleft">Your choice</div>
+		<div class="center"><link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">ONLINE TRAINING</div>
+		<div class="bottom"><link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">PROGRAMS</div>
+		<!---First div closed-->
+	</div>
+	<div class="main">
+	<div class="subdiv">
+		<center><img src="training/six.jpg" style="width: 1480px;"></center>
+		<div class="subbdiv">WHY PEOPLE CHOOSE US</div>
+		<div class="first">HIGH QUALITY</div>
+		<div class="firstdiv"> The internship is an experience that <br>provides a substantial, meaningful, <br>and challenging learning situation</div>
+		<div class="second">DEVELOPMENT</div>
+		<div class="seconddiv">These planning elements include identifying<br> project work, lining up a mentor, <br>and evaluating opportunities for<br> experiential learning. </div>
+		<div class="third">PHOTOGRAPHY</div>
+		<div class="thirddiv">Interns are likely to use Photoshop<br> and Lightroom, and gain experience<br> cropping images, adjusting color, exposure,<br> and lighting, among other things.</div>
+		<div class="fourth">WEB DESIGN</div>
+		<div class="fourthdiv">Designing websites, updating and<br> improving existing websites, and <br>guiding nonprofit teams through<br> managing their websites effectively.</div>
+		<div class="fifth">MARKETING</div>
+		<div class="fifthdiv">Applied understanding of basic marketing <br>principles. Familiarity with major <br>social media platforms Creative<br> problem-solving skills.</div>
+		<div class="sixth">BRANDING</div>
+		<div class="sixthdiv"> Conduct market research and analyze<br> data to identify consumer trends and<br> preferences. Assist in the development<br> and execution of brand marketing campaigns. </div>
+	</div>
+	</div>
+	<div class="MAIN">
+		<img src="training/good3.jpg">
+		<div class="chaithu"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">LIFE  IS  G👁️👁️D</div>
+		<div class="sub">WHEN YOU CHOOSE RIGHT THING</div>
+		<div class="sub1">An internship expands your professional network.<br> Interns often report to mid- to senior-level positions.<br> These mentors can help guide you and provide helpful<br> advice for your career path. Plus, you will<br> meet others within the company who have diverse<br> work experience and professional connections.<br>A good intern understands the importance of <br>hard work and commitment. They are punctual, reliable,<br> and demonstrate a strong sense of responsibility. <br>They go the extra mile to meet deadlines,<br> produce quality work, and are proactive in <br>taking initiative whenever possible</div>
+	</div>
+	<div class="bhav">
+		<img src="training/think4.jpg">
+		<div class="bhav1">DEEPIKA</div>
+		<div class="bhav2"><link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&display=swap" rel="stylesheet">WHY US</div>
+		<div class="bhavv">manager</div>
+		<div class="bhav3">Gain experience and increase marketability.
+		Having an <br>internship gives you experience in the career<br> field you want to pursue. Not only does this give<br> individuals an edge over other candidates when <br>applying for jobs, but it also prepares them for what to <br>expect in their field and increases confidence in their work <br>you can highlight your relevant skills and<br> experiences, show interest in the role, and <br>explain how you can contribute to the company's<br> goals while growing professionally</div>
+	</div>
+	<div class="pavi">
+		<img src="training/techvol.jpg" style="width: 1450px;">
+	</div>
+	<div class="us">
+		<img src="training/sc1.png">
+	</div>
+	<div class="bsp">
+		<div class="i"><img src="training/contact2.jpg" style="width: 1500px;" >
+			<div class="white">
+						<div class="bsp1"><link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Nabla&display=swap" rel="stylesheet">GET IN T⌨️UCH</div>
+		<div class="u"><i class="fa-solid fa-location-dot"></i></div>
+		<div class="u1">ADDRESS</div>
+		<div class="u11">Surkhet,NP12<br>birersdranagar 06</div>
+		<div class="u2"><i class="fa-regular fa-envelope"></i></div>
+		<div class="me">Mail Me<br>info@gmail.com</div>
+		<div class="div"><i class="fa-solid fa-phone"></i></div>
+		<div class="div1">Call me<br>+1 333 454 55 44</div>
+		<div class="div2"><input type="text" placeholder="ENTER YOUR NAME" ></div>
+		<div class="div3"><input type="email" placeholder="ENTER A VALID EMAIL ADDRESS"></div>
+		<div class="div4"><input type="text" placeholder="ENTER A MESSAGE"></div>
+		<div class="div5"><button style="background:orange ;border-block: inline;border-radius: 20px;top: 500px;border: 0;padding: 10px;">SUBMIT</button></div>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+
+</body>
+</html>
